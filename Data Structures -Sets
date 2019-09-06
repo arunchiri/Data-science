@@ -1,0 +1,21 @@
+#IN python the SET will hold the unique values. 
+
+words = set([ 'the' , 'red' , 'panda' , 'jumped' , ' over' , 'the' , 'red' , 'barn'])
+
+words
+
+#Great for membership checks
+'fox' in words
+
+sentence = set([ 'the' , 'red' , 'fox' , 'jumped' , ' over' , 'the' , 'brown' , 'fence'])
+
+#set logic 
+#Difference 
+sentence - words
+words - sentence
+
+#Union 
+words|sentence 
+
+#Intersection
+words & sentence 
