@@ -1,0 +1,12 @@
+my_var = 0
+if my_var == 42:
+	print('the universe makes sense')
+elif 42 == 42:
+	print(' Numbers work')
+else: 
+	print('Numbers are broken -\_(" )_/-')
+  
+  # Can use Ternary operator too! 
+
+'Numbers work' if 42 == 42 else 'Numbers are broken -\_(" )_/-' # the difference b/w the above if else construct and the 
+#this one is that print statemnt is not required to display the result
