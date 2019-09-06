@@ -1,0 +1,43 @@
+#Data Structures in Python : Lists
+my_var = 4
+# intialize a new lsit. Can contain Heterogeneous types
+my_list = [1, "jonathan",[1,2,3],my_var]
+#indexing
+my_list[1] 
+
+
+ #slicing (end point exclusive)
+    my_list[:2]
+    
+    
+    #negative indexing (everything but last element)
+my_list[:-1]
+
+
+#in-place Append 
+my_list.append(10)
+my_list
+
+
+# item assignment 
+my_list[2] = "Dinu"
+my_list
+
+
+# concatenate two lists
+x = my_list + [11,12,13]
+x
+
+# concatenate and update 
+my_list += [23,24,25]
+my_list
+
+#sorting
+num_list = [3,5,2,1]
+sorted(num_list) #sorted actually don't change the original value of the list
+
+num_list
+
+#in place sort
+num_list.sort() # here .sort() changes the content of the list
+num_list

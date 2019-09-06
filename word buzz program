@@ -1,0 +1,46 @@
+# objective to retrun all words that have duplicate letters 
+input_arr = ['hello','world','my','name','is','Arun']
+input_arr
+
+for word in input_arr:
+    print word
+    
+#cannot use list as a key for dictonary 
+for word in input_arr:
+    counts = {}
+    for letter in word: 
+        if letter in counts:
+            counts[letter] = counts[letter] + 1
+        else:
+            counts[letter] = 1
+counts
+            
+counts.values?
+
+def wordbuzz(input_arr):
+    for word in input_arr:
+        counts = {} # dictonary 
+        for letter in word:
+            if letter in counts:
+                counts[letter] += 1
+            else:
+                counts[letter] = 1
+        if max(counts.values()) > 1:
+            print word
+
+wordbuzz(input_arr)
+
+input_arr
+
+input_arr.append('Solly')
+wordbuzz(input_arr)
+
+input_arr
+
+input_arr = ['hello', 'world', 'my', 'name', 'is', 'Arun', 'Solly']
+input_arr
+
+wordbuzz(input_arr)
+
+counts
+            
