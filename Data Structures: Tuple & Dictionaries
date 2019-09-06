@@ -1,0 +1,38 @@
+#Data Structures: Tuple
+tup = ("hello",2,3) # hetreogenous 
+tup
+
+# indexing like list
+tup[0]
+
+# tuples are immutable however 
+tup[1] = '5'
+
+# Data Structures : Dictionaries 
+Employees = {'Jon' : 42, 'Anne' : 53213 }
+Employees
+
+#set new key 
+Employees['Arun'] = 38
+Employees
+
+# check membership 
+'Jon' in Employees
+Employees['Jon'] = 56
+
+# delete a key 
+del Employees['Jon']
+Employees
+
+Employees.items()
+
+tup = ('Arun','chiri')
+
+Employees[tup] = 37
+
+Employees
+
+#usage of 'in' in dictonaries 
+'Anne' in Employees
+
+53213 in Employees
