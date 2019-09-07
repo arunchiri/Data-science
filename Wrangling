@@ -1,0 +1,31 @@
+#Data wrangling using packages like csv
+import csv
+csvfile = open('reviews.csv')
+filereader = csv.reader(csvfile, quotechar='|') 
+# reader function return an iterator 
+header = next(filereader)
+print(header)
+print(next(filereader))
+rows = 0
+for row in filereader:
+    rows = rows + 1
+print(rows)
+#if we give next(filereader) it will how error that the iterations has stopped
+
+#Wrangling 2
+#Data wrangling using packages like csv
+import csv
+csvfile = open('reviews.csv')
+print(type(csvfile))
+filereader = csv.reader(csvfile,quotechar ='|')
+print(type(filereader))
+header = next(filereader)
+print(header)
+records = list(filereader) # converting a file to list for iterable operations
+print(records[0])
+for row in records:
+    pass # do nothing. Now we can do the iteration multiple tiems because 
+    #the data is copyied to memory instead of reading from the file. 
+print(len(records))
+print(type(records))
+print(zip(header,records[0])) #ZIP will zip together 2 lists and make a one single list
